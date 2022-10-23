@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Company</title>
+    <!--GOOGLE FONTS-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+    </style>
+    <!--LOCAL STYLESHEET-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--FONTAWESOME ICONS-->
+    <script src="https://kit.fontawesome.com/4a00a82b9f.js" crossorigin="anonymous"></script>
+
+    <!--BENTO SIDEBAR SCRIPT-->
+    <script type="module" src="https://cdn.ampproject.org/bento.mjs" crossorigin="anonymous"></script>
+    <script nomodule src="https://cdn.ampproject.org/bento.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://cdn.ampproject.org/v0/bento-sidebar-1.0.mjs" crossorigin="anonymous"></script>
+    <script nomodule src="https://cdn.ampproject.org/v0/bento-sidebar-1.0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.ampproject.org/v0/bento-sidebar-1.0.css" crossorigin="anonymous">
+</head>
+<!--END OF HEAD-->
+<body>
+    <main id="main" aria-label="main">
+        <nav id="mobile-nav">
+        <bento-sidebar id="sidebar1" side="right" hidden>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#tracking">Tracking</a></li>
+              <li><a href="#locations">Locations</a></li>
+            </ul>
+          </bento-sidebar>
+          <!--BENTO CONTROLS-->
+          <div class="buttons" style="margin-top: px">
+            <button id="open-sidebar" aria-label="menu">Menu <i class="fa-solid fa-bars"></i></button>
+          </div>
+       
+          <!--END OF BENTO SIDEBAR/MOBILE NAV-->
+        <header id="header">
+            <h1><a href="#">Delivery</a></h1>
+        </header>
+    </nav>
+    
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <script>
+            (async () => {
+              const sidebar = document.querySelector('#sidebar1');
+              await customElements.whenDefined('bento-sidebar');
+              const api = await sidebar.getApi();
+      
+              // set up button actions
+              document.querySelector('#open-sidebar').onclick = () => api.open();
+            })();
+          </script>
+    </main>   
+</body>
+</html>
