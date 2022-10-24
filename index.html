@@ -9,6 +9,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
     </style>
+
     <!--LOCAL STYLESHEET-->
     <link rel="stylesheet" href="styles.css">
 
@@ -26,24 +27,73 @@
 <body>
     <main id="main" aria-label="main">
         <nav id="mobile-nav">
-        <bento-sidebar id="sidebar1" side="right" hidden>
-            <ul>
-              <li><a href="#about">About</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#tracking">Tracking</a></li>
-              <li><a href="#locations">Locations</a></li>
-            </ul>
-          </bento-sidebar>
-          <!--BENTO CONTROLS-->
-          <div class="buttons" style="margin-top: px">
-            <button id="open-sidebar" aria-label="menu">Menu <i class="fa-solid fa-bars"></i></button>
-          </div>
-       
-          <!--END OF BENTO SIDEBAR/MOBILE NAV-->
-        <header id="header">
-            <h1><a href="#">Delivery</a></h1>
-        </header>
-    </nav>
+            <bento-sidebar id="sidebar1" side="right" hidden>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </bento-sidebar>
+            <!--BENTO CONTROLS-->
+            <div class="buttons" style="margin: 0 0.5rem">
+                <button id="open-sidebar" aria-label="menu">Menu <i class="fa-solid fa-bars"></i></button>
+            </div>
+            <!--END OF BENTO SIDEBAR/MOBILE NAV-->
+            <header id="header">
+                <h2 aria-label="logo"><a href="#">Logo</a></h2>
+            </header>
+        </nav>
+        <section id="about" class="about" aria-label="about">
+            <h2>About</h2>
+            <div class="container">
+                <article id="article">
+                    <h1>Delivery</h1>
+                    <p>We do last mile delivery for just about anything.</p>
+                    <p><a href="https://www.freepik.com/free-vector/way-concept-illustration_6982750.htm#query=delivery&position=0&from_view=author">Image by storyset</a> on Freepik</p>
+                </article>
+                <aside id="aside">
+                    <picture>
+                        <source srcset="./images3/6982750_3333449.avif" type="image/avif">
+                        <img src="./images3/6982750_3333449 (1).jpg" width="3000" height="2000" alt="storyset">
+                    </picture>
+                </aside>
+            </div>
+        </section>
+        <!--END OF ABOUT SECTION-->
+        <section id="services">
+            <h2>Services</h2>
+            <div class="container">
+                <article class="services-column">
+                    <picture class="services-image">
+                        <source srcset="./images3/13918557_5386670.avif" type="image/avif">
+                        <img src="./images3/13918557_5386670 (1).jpg" width="2000" height="2000" alt="eco shopping" loading="lazy">
+                    </picture>
+                    <h3>Groceries</h3>
+                    <p>We deliver fresh groceries from your local super market.</p>
+                    <p><a href="https://www.freepik.com/free-vector/eco-shopping-concept-illustration_13918557.htm#query=food&position=25&from_view=author">Image by storyset</a> on Freepik</p>
+                </article>
+                <article class="services-column">
+                    <picture class="services-image">
+                        <source srcset="./images3/10201206_4401295.avif" type="image/avif">
+                        <img src="./images3/10201206_4401295 (1).jpg" width="2000" height="2000" alt="hamburger" loading="lazy">
+                    </picture>
+                    <h3>Fast Food</h3>
+                    <p>Hamburgers are also delivered, as soon as the order is placed.</p>
+                    <p><a href="https://www.freepik.com/free-vector/hamburger-concept-illustration_10201206.htm#query=food&position=24&from_view=author">Image by storyset</a> on Freepik</p>
+                </article>
+                <article class="services-column">
+                    <picture class="services-image">
+                        <source srcset="./images3/12704336_5064281.avif" type="image/avif">
+                        <img src="./images3/12704336_5064281 (1).jpg" width="2000" height="2000" alt="delivery man" loading="lazy">
+                    </picture>
+                    <h3>Heavy Items</h3>
+                    <p>Fragile items and electronics, can also be delivered.</p>
+                    <p><a href="https://www.freepik.com/free-vector/heavy-box-concept-illustration_12704336.htm#query=delivery&position=10&from_view=author">Image by storyset</a> on Freepik</p>
+                </article>
+            </div>
+        </section>
+        <!--END OF SERVICES SECTION-->
     
 
         
@@ -66,7 +116,7 @@
               // set up button actions
               document.querySelector('#open-sidebar').onclick = () => api.open();
             })();
-          </script>
+        </script>
     </main>   
 </body>
 </html>
