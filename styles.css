@@ -33,6 +33,8 @@ body {
 img {
     width: 100%;
     height: auto;
+    display: block;
+    object-fit: cover;
 }
 section {
     padding: 5rem 0;
@@ -79,5 +81,36 @@ bento-sidebar[id="sidebar1"] li {
 section[class="about"] .container {
     display: grid;
     grid-template-columns: minmax(min-content, 1fr);
+    gap: 1rem;
 }
 
+/* END OF ABOUT SECTION */
+
+section[class="services"] .container {
+    display: grid;
+    grid-template-columns: minmax(min-content, 1fr);
+    gap: 1rem;
+}
+
+article[class="services-column"] {
+    text-align: center;
+    padding: 1rem;
+    border: 0.5rem solid var(--color-secondary);
+}
+/* END OF SERVICES SECTION */
+
+section[class="shipping"] .container{
+    display: grid;
+    grid-template-columns: minmax(min-content, 1fr);
+    gap: 1rem;
+}
+
+article[class="shipping-column"] {
+    background-color: var(--color-secondary);
+    text-align: center;
+    padding: 1rem;
+}
+
+article[class="shipping-column"] i {
+    color: var(--color-tertiary);
+}
