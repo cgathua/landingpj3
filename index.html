@@ -26,7 +26,7 @@
 <!--END OF HEAD-->
 <body>
     <main id="main" aria-label="main">
-        <nav id="mobile-nav">
+        <nav id="mobile-nav" aria-label="navigation">
             <bento-sidebar id="sidebar1" side="right" hidden>
                 <ul>
                     <li><a href="#about">About</a></li>
@@ -40,14 +40,14 @@
                 <button id="open-sidebar" aria-label="menu">Menu <i class="fa-solid fa-bars"></i></button>
             </div>
             <!--END OF BENTO SIDEBAR/MOBILE NAV-->
-            <header id="header">
-                <h2 aria-label="logo"><a href="#">Logo</a></h2>
+            <header id="header" aria-label="header">
+                <h2 aria-label="logo"><a href="#about">Logo</a></h2>
             </header>
         </nav>
         <section id="about" class="about" aria-label="about">
             <h2>About</h2>
             <div class="container">
-                <article class="about-article">
+                <article id="article" class="about-article">
                     <h1>Delivery</h1>
                     <p>We do last mile delivery for just about anything.</p>
                     <p><a href="https://www.freepik.com/free-vector/way-concept-illustration_6982750.htm#query=delivery&position=0&from_view=author">Image by storyset</a> on Freepik</p>
@@ -61,7 +61,7 @@
             </div>
         </section>
         <!--END OF ABOUT SECTION-->
-        <section id="services" class="services">
+        <section id="services" class="services" aria-label="services">
             <h2>Services</h2>
             <div class="container">
                 <article class="services-column">
@@ -94,43 +94,76 @@
             </div>
         </section>
         <!--END OF SERVICES SECTION-->
-        <section id="shipping" class="shipping">
+        <section id="shipping" class="shipping" aria-label="shipping">
             <h2>Shipping</h2>
             <div class="container">
                 <article class="shipping-column">
                     <i class="fa-solid fa-dolly fa-xl"></i>
                     <h3>Ship Now</h3>
-                    <p>Find the right service</p>
+                    <p><a href="./index.html">Find the right service <i class="fa-solid fa-angle-right"></i></a></p>
                 </article>
                 <article class="shipping-column">
                     <i class="fa-solid fa-money-check-dollar fa-xl"></i>
                     <h3>Quote</h3>
-                    <p>Estimate delivery cost</p>
+                    <p><a href="./index.html">Estimate delivery cost <i class="fa-solid fa-angle-right"></i></a></p>
                 </article>
                 <article class="shipping-column">
                     <i class="fa-solid fa-magnifying-glass fa-xl"></i>
                     <h3>Track</h3>
-                    <p>Get the latest status</p>
+                    <p><a href="./index.html">Get the latest status <i class="fa-solid fa-angle-right"></i></a></p>
                 </article>
                 <article class="shipping-column">
                     <i class="fa-solid fa-map-location-dot fa-xl"></i>
                     <h3>Locations</h3>
-                    <p>Local shipping centers</p>
+                    <p><a href="./index.html">Local shipping centers <i class="fa-solid fa-angle-right"></i></a></p>
                 </article>
             </div>
         </section>
+        <!--END OF SHIPPING SECTION-->
+        <section id="testimonials" class="testimonials" aria-label="testimonials">
+            <h2>Testimonials</h2>
+            <div class="container">
+                <figure class="testimonial">
+                    <article>
+                        <picture>
+                            <source srcset="./images3/10769660_4530159.avif" type="image/avif">
+                            <img src="./images3/10769660_4530159 (1).jpg" width="2000" height="2000" alt="profile picture" loading="lazy">   
+                        </picture>
+                        <h3>Ann</h3>
+                        <small>Consultant</small>
+                    </article>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>   
+                    <p>This delivery company is reliable and fast. The customer service is also excellent</p>
+                    <figcaption><a href="https://www.freepik.com/free-vector/online-page-concept-illustration_10769660.htm#page=2&query=profile&position=38&from_view=author">Image by storyset</a> on Freepik</figcaption>
+                </figure>
+                <!--END OF FIRST TESTIMONIAL-->
+                <figure class="testimonial">
+                    <article>
+                        <picture class="avatar">
+                            <source srcset="./images3/9933453_4322927.avif" type="image/avif">
+                            <img src="./images3/9933453_4322927 (1).jpg" width="2000" height="2000" alt="profile picture" loading="lazy">   
+                        </picture>
+                        <h3>Christy</h3>
+                        <small>Human Resources</small>
+                    </article>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <p>The pricing is very competitive and the delivery people are courteous and on time. Highly recommend!</p>
+                    <figcaption><a href="https://www.freepik.com/free-vector/profile-data-concept-illustration_9933453.htm#page=2&query=profile&position=45&from_view=author">Image by storyset</a> on Freepik</figcaption>
+                </figure>
+                <!--END OF SECOND TESTIMONIAL-->  
+            </div>
+        </section>
+        <!--END OF TESTIMONIAL SECTION-->
     
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+  
         
         <script>
             (async () => {

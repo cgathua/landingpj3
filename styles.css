@@ -84,7 +84,7 @@ section[class="about"] .container {
     gap: 1rem;
 }
 
-/* END OF ABOUT SECTION */
+/* END OF ABOUT STYLING */
 
 section[class="services"] .container {
     display: grid;
@@ -97,7 +97,7 @@ article[class="services-column"] {
     padding: 1rem;
     border: 0.5rem solid var(--color-secondary);
 }
-/* END OF SERVICES SECTION */
+/* END OF SERVICES STYLING */
 
 section[class="shipping"] .container{
     display: grid;
@@ -112,5 +112,26 @@ article[class="shipping-column"] {
 }
 
 article[class="shipping-column"] i {
-    color: var(--color-tertiary);
+    color: var(--color-primary);
+}
+/* END OF SHIPPING STYLING */
+
+section[class="testimonials"] .container {
+    display: grid;
+    grid-template-columns: minmax(min-content, 1fr);
+    gap: 1rem;
+}
+
+figure[class="testimonial"] {
+    border: 0.5rem solid var(--color-secondary);
+    padding: 1rem;
+    text-align: center;
+}
+
+figure[class="testimonial"] h3 {
+    line-height: 1rem;
+}
+
+figure[class="testimonial"] i {
+    color: var(--color-primary);
 }
