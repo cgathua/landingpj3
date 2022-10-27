@@ -28,7 +28,7 @@
     <main id="main" aria-label="main">
         <nav id="mobile-nav" aria-label="navigation">
             <bento-sidebar id="sidebar1" side="right" hidden>
-                <ul>
+                <ul class="bento">
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#shipping">Shipping</a></li>
@@ -39,11 +39,22 @@
             <div class="buttons" style="margin: 0 0.5rem">
                 <button id="open-sidebar" aria-label="menu">Menu <i class="fa-solid fa-bars"></i></button>
             </div>
-            <!--END OF BENTO SIDEBAR/MOBILE NAV-->
+            <!--END OF BENTO SIDEBAR-->
             <header id="header" aria-label="header">
                 <h2 aria-label="logo"><a href="#about">Logo</a></h2>
+                <nav id="desktop-nav">
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#shipping">Shipping</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                    </ul>
+                </nav>
+                <!--END OF DESKTOP NAV-->   
             </header>
+            <!--END OF HEADER-->
         </nav>
+        <!--END OF MOBILE NAV-->
         <section id="about" class="about" aria-label="about">
             <h2>About</h2>
             <div class="container">
@@ -124,7 +135,7 @@
             <h2>Testimonials</h2>
             <div class="container">
                 <figure class="testimonial">
-                    <article>
+                    <article class="ann">
                         <picture>
                             <source srcset="./images3/10769660_4530159.avif" type="image/avif">
                             <img src="./images3/10769660_4530159 (1).jpg" width="2000" height="2000" alt="profile picture" loading="lazy">   
@@ -158,13 +169,109 @@
                     <p>The pricing is very competitive and the delivery people are courteous and on time. Highly recommend!</p>
                     <figcaption><a href="https://www.freepik.com/free-vector/profile-data-concept-illustration_9933453.htm#page=2&query=profile&position=45&from_view=author">Image by storyset</a> on Freepik</figcaption>
                 </figure>
-                <!--END OF SECOND TESTIMONIAL-->  
+                <!--END OF SECOND TESTIMONIAL--> 
+                <figure class="testimonial">
+                    <article>
+                        <picture class="avatar">
+                            <source srcset="./images3/5538074_2859735.avif" type="image/avif">
+                            <img src="./images3/5538074_2859735 (1).jpg" width="2000" height="2000" alt="profile picture" loading="lazy">   
+                        </picture>
+                        <h3>Jim</h3>
+                        <small>Sales</small>
+                    </article>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, voluptatum!</p>
+                    <figcaption><a href="https://www.freepik.com/free-vector/account-concept-illustration_5538074.htm#query=profile&position=5&from_view=author">Image by storyset</a> on Freepik
+                    </figcaption>
+                </figure>
+                <!--END OF THIRD TESTIMONIAL-->
+                <figure class="testimonial">
+                    <article>
+                        <picture class="avatar">
+                            <source srcset="./images3/10594782_4498900.avif" type="image/avif">
+                            <img src="./images3/10594782_4498900 (1).jpg" width="2000" height="2000" alt="profile picture" loading="lazy">   
+                        </picture>
+                        <h3>Charles</h3>
+                        <small>Data Analyst</small>
+                    </article>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, praesentium.</p>
+                    <figcaption><a href="https://www.freepik.com/free-vector/personal-data-concept-illustration_10594782.htm#query=profile&position=9&from_view=author">Image by storyset</a> on Freepik</figcaption>
+                </figure>
+                <!--END OF FOURTH TESTIMONIAL-->
             </div>
         </section>
         <!--END OF TESTIMONIAL SECTION-->
-    
-  
-        
+        <footer id="footer" aria-label="footer">
+            <section id="footer-main">
+                <article class="footer-column">
+                    <h3 class="footer-title">Company</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Investors</a></li>
+                        <li><a href="#">Accesability</a></li>
+                        <li><a href="#">Company News</a></li>
+                    </ul>
+                </article>
+                <article class="footer-column">
+                    <h3 class="footer-title">Permalinks</h3>
+                    <ul>
+                       <li><a href="#about">About</a></li>
+                       <li><a href="#services">Services</a></li>
+                       <li><a href="#testimonials">Testimonials</a></li>
+                    </ul>
+                </article>
+                <article class="footer-column">
+                    <h3 class="footer-title">Contact</h3>
+                    <ul>
+                        <li><a href="#">Email</a></li>
+                        <li><a href="#">Sales</a></li>
+                        <li><a href="#">Help Desk</a></li>
+                    </ul>
+                </article>
+                <article class="footer-column">
+                    <h3 class="footer-title">Stay Informed</h3>
+                    <p>Subscribe to our mailing list.</p>
+                    <form action="newsletter" aria-label="signup">
+                        <label for="email"><input id="email" type="email" name="email" placeholder="Enter your email"
+                        required="valid email" aria-label="enter your email"></label>
+                        <label for="submit button"><input type="submit" value="Subscribe"></label>
+                    </form>
+                </article>
+            </section>
+            <!--END OF FOOTER MAIN SECTION-->
+            <section id="footer-socials" aria-label="social media">
+                <ul class="footer-icons">
+                    <li><a href="#" aria-label="facebook"><i class="fa-brands fa-facebook fa-lg"></i></a></li>
+                    <li><a href="#" aria-label="twitter"><i class="fa-brands fa-twitter fa-lg"></i></a></li>
+                    <li><a href="#" aria-label="instagram"><i class="fa-brands fa-instagram fa-lg"></i></a></li>
+                    <li><a href="#" aria-label="github"><i class="fa-brands fa-github fa-lg"></i></a></li>
+                    <li><a href="#" aria-label="linkedin"><i class="fa-brands fa-linkedin fa-lg"></i></a></li>
+                    <li><a href="#" aria-label="youtube"><i class="fa-brands fa-youtube fa-lg"></i></a></li>
+                </ul>
+            </section>
+            <!--END OF SOCIAL MEDIA SECTION-->
+            <section id="footer-legal" aria-label="legal">
+                <small>
+                    <ul class="footer-legal-items">
+                       <li><a href="#">Terms &amp; Conditions</a></li>
+                       <li><a href="#">Privacy Policy</a></li>
+                       <li>&copy; Copyright 2022 Logo</li>
+                    </ul>
+                </small>
+            </section>
+            <!--END OF LEGAL SECTION-->
+        </footer> 
+        <!--END OF FOOTER SECTION-->   
         <script>
             (async () => {
               const sidebar = document.querySelector('#sidebar1');
@@ -175,6 +282,7 @@
               document.querySelector('#open-sidebar').onclick = () => api.open();
             })();
         </script>
+        <!--END OF BENTO SIDEBAR SCRIPT-->
     </main>   
 </body>
 </html>
