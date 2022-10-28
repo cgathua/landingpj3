@@ -29,7 +29,7 @@ body {
 .container {
     flex: 1;
     margin: 0 auto;
-    width: 80%; 
+    width: 90%; 
 
 }
  
@@ -103,14 +103,14 @@ section[class="services"] .container {
 }
 
 article[class="services-column"] {
-    text-align: center;
     padding: 1rem;
-    border: 0.5rem solid var(--color-secondary);
+    text-align: center;
 }
 
 picture[class="services-image"]{
     padding: 1rem;
 }
+
 
 /* END OF SERVICES STYLING */
 
@@ -122,8 +122,8 @@ section[class="shipping"] .container{
 
 article[class="shipping-column"] {
     background-color: var(--color-secondary);
-    text-align: center;
     padding: 1rem;
+    text-align: center;
 }
 
 article[class="shipping-column"] i {
@@ -135,12 +135,12 @@ section[class="testimonials"] .container {
     display: grid;
     grid-template-columns: minmax(min-content, 1fr);
     gap: 1rem;
+    text-align: center;
 }
 
 figure[class="testimonial"] {
     border: 0.5rem solid var(--color-secondary);
     padding: 1rem;
-    text-align: center;
 }
 
 figure[class="testimonial"] h3 {
@@ -149,6 +149,11 @@ figure[class="testimonial"] h3 {
 
 figure[class="testimonial"] i {
     color: var(--color-primary);
+}
+
+.avatar img, source {
+    width: 3rem;
+    border-radius: 50%;
 }
 /* END OF TESTIMONIAL STYLING */
 
@@ -297,6 +302,8 @@ ul[class="footer-legal-items"] li {
 
     section[class="about"] .container {
         grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+
     }
     
     section[class="services"] .container {
@@ -310,5 +317,7 @@ ul[class="footer-legal-items"] li {
     section[class="testimonials"] .container {
         grid-template-columns: repeat(4, 1fr);
     }
+
 }
+
     
