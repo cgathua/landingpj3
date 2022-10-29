@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Contact Page</title>
+    <meta name="title" content="Contact Page">
+    <meta name="description" content="This is a contact page with a form and location">
+
+    <!--GOOGLE FONTS-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+    </style>
+
+    <!--LOCAL STYLESHEET-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--FONTAWESOME ICONS-->
+    <script src="https://kit.fontawesome.com/4a00a82b9f.js" crossorigin="anonymous"></script>
+
+    <!--BENTO SIDEBAR SCRIPT-->
+    <script type="module" src="https://cdn.ampproject.org/bento.mjs" crossorigin="anonymous"></script>
+    <script nomodule src="https://cdn.ampproject.org/bento.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://cdn.ampproject.org/v0/bento-sidebar-1.0.mjs" crossorigin="anonymous"></script>
+    <script nomodule src="https://cdn.ampproject.org/v0/bento-sidebar-1.0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.ampproject.org/v0/bento-sidebar-1.0.css" crossorigin="anonymous">
+</head>
+<!--END OF HEAD-->
+<body>
+    <main id="main" aria-label="main">
+        <nav id="mobile-nav" aria-label="navigation">
+            <bento-sidebar id="sidebar1" side="right" hidden>
+                <ul class="bento">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="#index.html#services">Services</a></li>
+                    <li><a href="index.html#shipping">Shipping</a></li>
+                    <li><a href="index.html#testimonials">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </bento-sidebar>
+            <!--BENTO CONTROLS-->
+            <div class="buttons" style="margin: 0 0.5rem">
+                <button id="open-sidebar" aria-label="menu">Menu <i class="fa-solid fa-bars"></i></button>
+            </div>
+            <!--END OF BENTO SIDEBAR-->
+            <header id="header" aria-label="header">
+                <h2 aria-label="logo"><a href="#about">Logo</a></h2>
+                <nav id="desktop-nav">
+                    <ul class="nav-links">
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#shipping">Shipping</a></li>
+                        <li><a href="index.html#testimonials">Testimonials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <!--END OF DESKTOP NAV-->   
+            </header>
+            <!--END OF HEADER-->
+        </nav>
+        <!--END OF MOBILE NAV-->
+        <section id="contact" class="contact" aria-label="contact section">
+            <h2>Contact</h2>
+            <div class="container">
+                <form action="contact-form" aria-label="contact-form" >
+                    <fieldset>
+                        <legend>
+                            <label for="name">Name <input id="name" type="text" required="full name" aria-label="legal name"></label>
+                            <label for="email">Email <input id="email" type="email" required="current email" aria-label="valid email"></label>
+                        </legend>
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            <label for="message">Message
+                                <textarea name="message" id="message" cols="30" rows="10" required="valid message"></textarea>
+                            </label> 
+                        </legend>
+                    </fieldset>
+                    <label for="submit"><input type="submit" id="submit" value="Send Message" aria-label="click button"></label>
+                </form>
+                <!--END OF FORM SECTION-->
+                <aside aria-label="aside">
+                    <h3>Contact information</h3>
+                    <p>how can we help?</p>
+                    <div class="info">
+                        <article aria-label="article">
+                            <i class="fa-solid fa-envelope fa-1x"></i>
+                            <div class="details">
+                                <h4>Email</h4>
+                                <p>info@logo.com</p>
+                            </div>
+                        </article>
+                        <article aria-label="article">
+                            <i class="fa-solid fa-location-dot fa-1x"></i>
+                            <div class="details">
+                                <h4>Location</h4>
+                                <p>748 Grove Street</p>
+                                <p>Atlanta, Georgia 30144</p>
+                            </div>
+                        </article>
+                        <article aria-label="article">
+                            <i class="fa-solid fa-phone fa-1x"></i>
+                            <div class="details">
+                                <h4>Telephone</h4>
+                                <p>Weekdays 8am-5pm</p>
+                                <p>(404) 000-0001</p>
+                            </div>
+                        </article> 
+                    </div>
+                </aside>                    
+            </div>
+            <!--END OF ASIDE INFORMATION-->
+        </section>
+        <!--END OF CONTACT SECTION-->
+
+
+
+
+
+
+        <script>
+            (async () => {
+              const sidebar = document.querySelector('#sidebar1');
+              await customElements.whenDefined('bento-sidebar');
+              const api = await sidebar.getApi();
+      
+              // set up button actions
+              document.querySelector('#open-sidebar').onclick = () => api.open();
+            })();
+        </script>
+        <!--END OF BENTO SIDEBAR SCRIPT-->
+    </main>   
+</body>
+</html>

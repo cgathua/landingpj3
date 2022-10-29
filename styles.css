@@ -22,6 +22,7 @@ html {
 body {
     font-family: 'Montserrat', sans-serif;
     min-height: 100vh; 
+    width: 100vw;
     display: flex;
     flex-direction: column;
 }
@@ -40,7 +41,7 @@ img {
     object-fit: cover;
 }
 section {
-    padding: 5rem 0;
+    padding: 6rem 0;
 }
 
 section h2 {
@@ -94,6 +95,9 @@ section[class="about"] .container {
     gap: 1rem;
 }
 
+article[class="about-article"] {
+    text-align: center;
+}
 /* END OF ABOUT STYLING */
 
 section[class="services"] .container {
@@ -103,7 +107,7 @@ section[class="services"] .container {
 }
 
 article[class="services-column"] {
-    padding: 1rem;
+    padding: 2rem;
     text-align: center;
 }
 
@@ -122,7 +126,7 @@ section[class="shipping"] .container{
 
 article[class="shipping-column"] {
     background-color: var(--color-secondary);
-    padding: 1rem;
+    padding: 1rem 0;
     text-align: center;
 }
 
@@ -139,7 +143,7 @@ section[class="testimonials"] .container {
 }
 
 figure[class="testimonial"] {
-    border: 0.5rem solid var(--color-secondary);
+    background-color:  var(--color-secondary);
     padding: 1rem;
 }
 
@@ -251,7 +255,7 @@ ul[class="footer-legal-items"] li {
 .footer-legal-items li:nth-of-type(2) {
     flex: 1;
 }
-/* LEGAL SECTION STYLING */
+/* END OF LEGAL SECTION STYLING */
 
 /* ==== MEDIA QUERIES FOR FOOTER SECTION ====*/
 @media only screen and (min-width: 480px) {
@@ -307,17 +311,98 @@ ul[class="footer-legal-items"] li {
     }
     
     section[class="services"] .container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: minmax(min-content, 1fr)
+        minmax(min-content, 1fr) minmax(min-content, 1fr);
     }
 
     section[class="shipping"] .container {
         grid-template-columns: repeat(4, 1fr);
+    
     }
 
     section[class="testimonials"] .container {
         grid-template-columns: repeat(4, 1fr);
     }
 
+
 }
 
+/* END OF MEDIA QUERIES FOR MAIN PAGE */
+
+
+section[class="contact"] .container {
+    display: grid;
+    grid-template-columns: minmax(min-content, 1fr)
+    minmax(min-content, 1fr);
+    gap: 1rem;
+}
+
+form[action="contact-form"] {
+    background-color: var(--color-secondary);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+fieldset {
+    border: none;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+input, textarea, select, legend {
+    width: 100%;
+    margin: 10px 0 0 0;
+    min-height: 2em;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+input, textarea {
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    color: var(--color-white);
+}
+
+input[type="submit"] {
+    display: block;
+    min-width: 60%;
+    height: 2em;
+    font-size: 1rem;
+    background-color: var(--color-primary);
+    border-color: var(--color-white);
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+section[class="contact"] aside {
+    background-color: transparent;
+    padding: 2rem;
+}
+
+ aside h3 {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    padding-bottom: 0.5rem;
+}
+
+section[class="contact"] article {
+    display: flex;
+    gap: 1rem;
+    padding-top: 2rem;
+}
+
+@media screen and (max-width: 1024px){
+    section[class="contact"] .container {
+        grid-template-columns: minmax(min-content, 1fr);
+    }
+
     
+}
+/* END OF CONTACT PAGE  */
