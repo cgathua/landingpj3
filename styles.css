@@ -198,9 +198,10 @@ form {
     flex-wrap: wrap;
 }
 
-input[type="email"]{
+label[class="label"] input[type="email"]{
     border: 0;
     padding: 0.625rem;
+    background-color: white;
     margin-top: 0.3125rem;
 }
 
@@ -257,18 +258,10 @@ ul[class="footer-legal-items"] li {
 }
 /* END OF LEGAL SECTION STYLING */
 
-/* ==== MEDIA QUERIES FOR FOOTER SECTION ====*/
-@media only screen and (min-width: 480px) {
-    section[id="footer-main"]{
-        justify-content: space-around;
-    }  
-}
+section[id="footer-main"]{
+    justify-content: space-around;
+}  
 
-@media only screen and (min-width:1024px){
-    section[id="footer-main"] {
-        justify-content: space-evenly;
-    }
-}
 /* END OF FOOTER SECTION */
 
 /* === MEDIA QUERIES FOR LARGE SCREENS === */
@@ -324,6 +317,9 @@ ul[class="footer-legal-items"] li {
         grid-template-columns: repeat(4, 1fr);
     }
 
+    section[id="footer-main"] {
+        justify-content: space-evenly;
+    }
 
 }
 
@@ -369,15 +365,16 @@ input, textarea {
     color: var(--color-white);
 }
 
-input[type="submit"] {
+label[class="label4"] input[type="submit"] {
     display: block;
     min-width: 60%;
     height: 2em;
     font-size: 1rem;
     background-color: var(--color-primary);
+    color: var(--color-secondary);
     border-color: var(--color-white);
-    cursor: pointer;
     text-transform: uppercase;
+    cursor: pointer;
     padding: 0;
 }
 
@@ -401,8 +398,6 @@ section[class="contact"] article {
 @media screen and (max-width: 1024px){
     section[class="contact"] .container {
         grid-template-columns: minmax(min-content, 1fr);
-    }
-
-    
+    }   
 }
-/* END OF CONTACT PAGE  */
+/* END OF CONTACT PAGE */

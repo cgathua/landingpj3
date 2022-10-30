@@ -7,8 +7,8 @@
 
     <title>Delivery Company</title>
     <meta name="title" content="Delivery Company">
-    <meta name="description" content="This is a landing page for a delivery company">
-    
+    <meta name="description" content="This is a landing page for a delivery company, made by cgathua">
+
     <!--GOOGLE FONTS-->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
@@ -37,7 +37,7 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#shipping">Shipping</a></li>
                     <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="contact.html" target="_blank">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </bento-sidebar>
             <!--BENTO CONTROLS-->
@@ -47,13 +47,13 @@
             <!--END OF BENTO SIDEBAR-->
             <header id="header" aria-label="header">
                 <h2 aria-label="logo"><a href="#about">Logo</a></h2>
-                <nav id="desktop-nav">
-                    <ul class="nav-links">
+                <nav id="desktop-nav" aria-label="desktop navigation">
+                    <ul class="nav-links" aria-label="navigation links">
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#shipping">Shipping</a></li>
                         <li><a href="#testimonials">Testimonials</a></li>
-                        <li><a href="contact.html" target="_blank">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
                 <!--END OF DESKTOP NAV-->   
@@ -140,7 +140,7 @@
         <section id="testimonials" class="testimonials" aria-label="testimonials">
             <h2>Testimonials</h2>
             <div class="container">
-                <figure class="testimonial">
+                <figure id="testimonial" class="testimonial">
                     <article>
                         <picture class="avatar">
                             <source srcset="./images3/10769660_4530159.avif" type="image/avif">
@@ -158,7 +158,7 @@
                     <figcaption><a href="https://www.freepik.com/free-vector/online-page-concept-illustration_10769660.htm#page=2&query=profile&position=38&from_view=author">Image by storyset</a> on Freepik</figcaption>
                 </figure>
                 <!--END OF FIRST TESTIMONIAL-->
-                <figure class="testimonial">
+                <figure id="testimonial" class="testimonial">
                     <article>
                         <picture class="avatar">
                             <source srcset="./images3/9933453_4322927.avif" type="image/avif">
@@ -176,7 +176,7 @@
                     <figcaption><a href="https://www.freepik.com/free-vector/profile-data-concept-illustration_9933453.htm#page=2&query=profile&position=45&from_view=author">Image by storyset</a> on Freepik</figcaption>
                 </figure>
                 <!--END OF SECOND TESTIMONIAL--> 
-                <figure class="testimonial">
+                <figure id="testimonial" class="testimonial">
                     <article>
                         <picture class="avatar">
                             <source srcset="./images3/5538074_2859735.avif" type="image/avif">
@@ -195,7 +195,7 @@
                     </figcaption>
                 </figure>
                 <!--END OF THIRD TESTIMONIAL-->
-                <figure class="testimonial">
+                <figure id="testimonial" class="testimonial">
                     <article>
                         <picture class="avatar">
                             <source srcset="./images3/10594782_4498900.avif" type="image/avif">
@@ -232,9 +232,10 @@
                     <h3 class="footer-title">Permalinks</h3>
                     <ul>
                        <li><a href="#about">About</a></li>
-                       <li><a href="#services">Services</a></li>
+                       <li><a href="#Services">Services</a></li>
                        <li><a href="#shipping">Shipping</a></li>
                        <li><a href="#testimonials">Testimonials</a></li>
+                       <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </article>
                 <article class="footer-column">
@@ -249,7 +250,7 @@
                     <h3 class="footer-title">Stay Informed</h3>
                     <p>Subscribe to our mailing list.</p>
                     <form action="newsletter" aria-label="signup">
-                        <label for="email"><input id="email" type="email" name="email" placeholder="Enter your email"
+                        <label for="email" class="label"><input id="email" type="email" name="email" placeholder="Enter your email"
                         required="valid email" aria-label="enter your email"></label>
                         <label for="submit button"><input type="submit" value="Subscribe"></label>
                     </form>
