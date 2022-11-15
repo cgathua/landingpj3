@@ -74,6 +74,8 @@ nav[id="mobile-nav"]{
     gap: 1rem;
     background-color: var(--color-secondary);
     position: relative;
+    top: 0;
+    left: 0;
 }
 
 button[id="open-sidebar"] {
@@ -132,6 +134,7 @@ article[class="shipping-column"] {
 
 article[class="shipping-column"] i {
     color: var(--color-primary);
+    padding: 1rem;
 }
 /* END OF SHIPPING STYLING */
 
