@@ -64,7 +64,7 @@
         <section id="contact" class="contact" aria-label="contact section">
             <h2>Contact</h2>
             <div class="container">
-                <form action="contact-form" aria-label="contact-form" >
+                <form method="post" action="contact-form" aria-label="contact-form" >
                     <fieldset>
                         <legend>
                             <label for="name">Name <input id="name" type="text" required="full name" aria-label="legal name"></label>
@@ -74,7 +74,7 @@
                     <fieldset>
                         <legend>
                             <label for="message">Message
-                                <textarea name="message" id="message" cols="30" rows="10" required="valid message"></textarea>
+                                <textarea name="message" id="message" cols="30" rows="5" required="valid message"></textarea>
                             </label> 
                         </legend>
                     </fieldset>
@@ -86,14 +86,14 @@
                     <p>how can we help?</p>
                     <div class="info">
                         <article aria-label="article">
-                            <i class="fa-solid fa-envelope fa-1x"></i>
+                            <i class="fa-solid fa-envelope fa-2x"></i>
                             <div class="details">
                                 <h4>Email</h4>
                                 <p>info@logo.com</p>
                             </div>
                         </article>
                         <article aria-label="article">
-                            <i class="fa-solid fa-location-dot fa-1x"></i>
+                            <i class="fa-solid fa-location-dot fa-2x"></i>
                             <div class="details">
                                 <h4>Location</h4>
                                 <p>748 Grove Street</p>
@@ -101,7 +101,7 @@
                             </div>
                         </article>
                         <article aria-label="article">
-                            <i class="fa-solid fa-phone fa-1x"></i>
+                            <i class="fa-solid fa-phone fa-2x"></i>
                             <div class="details">
                                 <h4>Telephone</h4>
                                 <p>Weekdays 8am-5pm</p>
@@ -147,10 +147,10 @@
                 <article class="footer-column">
                     <h3 class="footer-title">Stay Informed</h3>
                     <p>Subscribe to our mailing list.</p>
-                    <form action="newsletter" aria-label="mailing list">
-                        <label for=" email" class="label"><input id="email" type="email" name="email" placeholder="Enter your email"
+                    <form method="post" action="newsletter" aria-label="sign up">
+                        <label for=" signup-email" class="label"><input id="signup-email" type="email" placeholder="Enter your email"
                         required="valid email" aria-label="current email"></label>
-                        <label for="submit button"><input type="submit" value="Subscribe"></label>
+                        <label for="submit-label"><input type="submit" value="Subscribe"></label>
                     </form>
                 </article>
             </section>
