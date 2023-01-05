@@ -66,6 +66,22 @@ a {
 a:hover {
     color: var(--color-alternate);
 }
+
+.btn {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    padding: 5px 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    transition: var(--transition);
+    position: relative;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
 /* END OF GENERAL STYLING */
 
 nav[id="mobile-nav"]{
