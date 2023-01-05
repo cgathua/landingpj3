@@ -32,7 +32,6 @@ body {
     flex: 1;
     margin: 0 auto;
     width: 90%; 
-
 }
  
 img {
@@ -55,7 +54,6 @@ h1 {
 }
 h1, h2, h3, p {
     color: var(--color-primary);
-
 }
 
 
@@ -100,7 +98,7 @@ button[id="open-sidebar"] {
 }
 
 bento-sidebar[id="sidebar1"] li {
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 .nav-links {
@@ -133,8 +131,6 @@ article[class="services-column"] {
 picture[class="services-image"]{
     padding: 1rem;
 }
-
-
 /* END OF SERVICES STYLING */
 
 section[class="shipping"] .container{
@@ -191,7 +187,6 @@ footer[id="footer"] a {
 }
 footer[id="footer"] a:hover {
     color: var(--color-alternate);
-
 }
 
 .footer-column {
@@ -258,8 +253,7 @@ section[id="footer-legal"] a {
 section[id="footer-legal"] {
     padding: 0.9375rem 1.875rem;
     background-color: var(--color-primary);
-    color: var(--color-secondary);
-    
+    color: var(--color-secondary);  
 }
 
 ul[class="footer-legal-items"] {
@@ -281,7 +275,6 @@ ul[class="footer-legal-items"] li {
 section[id="footer-main"]{
     justify-content: space-around;
 }  
-
 /* END OF FOOTER SECTION */
 
 /* === MEDIA QUERIES FOR LARGE SCREENS === */
@@ -293,6 +286,7 @@ section[id="footer-main"]{
     .buttons {
         display: none;
     }
+
     header[id="header"] {
         position: fixed;
         width: 100%;
@@ -320,7 +314,6 @@ section[id="footer-main"]{
     section[class="about"] .container {
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
-
     }
     
     section[class="services"] .container {
@@ -330,7 +323,6 @@ section[id="footer-main"]{
 
     section[class="shipping"] .container {
         grid-template-columns: repeat(4, 1fr);
-    
     }
 
     section[class="testimonials"] .container {
@@ -340,12 +332,8 @@ section[id="footer-main"]{
     section[id="footer-main"] {
         justify-content: space-evenly;
     }
-
 }
-
 /* END OF MEDIA QUERIES FOR MAIN PAGE */
-
-
 section[class="contact"] .container {
     display: grid;
     grid-template-columns: minmax(min-content, 1fr)
